@@ -4,8 +4,9 @@ from datetime import datetime
 from google.genai import types
 import subprocess # this helps to execute command in terminal given by llm
 import platform 
+from dotenv import load_dotenv
 import os # this this tell llm about pc type , which operating system you are using like window, mac, linux
-
+load_dotenv()
 os_platform = platform.system() # window
 
 def executeCommand(command):  # its a tool which execute terminal command
@@ -118,7 +119,9 @@ getCurrTimeDeclaration = types.FunctionDeclaration(
 
 
 
-client = genai.Client(api_key="AIzaSyCnI0btWpnqERK5f1HTX3Zfc6tT5xqUe8c")
+api_key = os.getenv("GEMINI_API_KEY")  # read from .env
+client = genai.Client(api_key=api_key)
+
 
 tools = [
     types.Tool(function_declarations=[executeCommandDeclaration, writeFileDeclaration,getCurrTimeDeclaration, cryptoPriceDeclaration,todayWeatherDeclaration])

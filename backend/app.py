@@ -1,10 +1,15 @@
 from flask import Flask, request, jsonify
 from gemini import get_llm_response
 from flask_cors import CORS
+from dotenv import load_dotenv
 import os
 
 app=Flask(__name__)
 CORS(app)
+
+
+load_dotenv()  # take environment variables from .env
+api_key = os.getenv("GEMINI_API_KEY")
 
 @app.route("/chat", methods=["POST"])
 def chat_api():
