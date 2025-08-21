@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Agent</title>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="mobile-toggle" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="sidebar" id="sidebar">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>AI Agent</h1>
+            </div>
+            
+            <button class="new-chat" onclick="startNewChat()">
+                <i class="fas fa-plus"></i>
+                New Chat
+            </button>
+            
+            <div class="chat-history" id="chatHistory">
+                <!-- Chat history will be populated here -->
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <div class="header-title">AI Assistant</div>
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span>Online</span>
+                </div>
+            </div>
+
+            <div class="chat-container" id="chatContainer">
+                <div class="welcome-screen" id="welcomeScreen">
+                    <div class="welcome-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h1 class="welcome-title">Welcome to AI Agent</h1>
+                    <p class="welcome-subtitle">
+                        Your intelligent assistant capable of creating websites, checking weather, 
+                        cryptocurrency prices, executing commands, and much more. How can I help you today?
+                    </p>
+                    
+                    <div class="example-prompts">
+                        <div class="example-prompt" onclick="sendExamplePrompt('Create a modern portfolio website')">
+                            <i class="fas fa-globe"></i>
+                            <h3>Website Builder</h3>
+                            <p>Create a modern portfolio website</p>
+                        </div>
+                        
+                        <div class="example-prompt" onclick="sendExamplePrompt('What is the weather in Delhi today?')">
+                            <i class="fas fa-cloud-sun"></i>
+                            <h3>Weather Check</h3>
+                            <p>What is the weather in Delhi today?</p>
+                        </div>
+                        
+                        <div class="example-prompt" onclick="sendExamplePrompt('What is the current price of Bitcoin?')">
+                            <i class="fas fa-bitcoin"></i>
+                            <h3>Crypto Prices</h3>
+                            <p>What is the current price of Bitcoin?</p>
+                        </div>
+                        
+                        <div class="example-prompt" onclick="sendExamplePrompt('What is today date?')">
+                            <i class="fas fa-calendar"></i>
+                            <h3>Current Date</h3>
+                            <p>What is today's date?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea 
+                        class="chat-input" 
+                        id="chatInput" 
+                        placeholder="Type your message here... (Press Enter to send, Shift+Enter for new line)"
+                        rows="1"
+                    ></textarea>
+                    <button class="send-button" id="sendButton" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
