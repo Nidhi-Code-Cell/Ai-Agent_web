@@ -24,18 +24,6 @@ This project integrates external APIs like **Weather**, **Crypto Price Tracker**
 
 ---
 
-## 📂 Project Structure  
-aiAgent/
-│── backend/
-│ ├── app.py
-│ ├── api_handlers/
-│ └── utils/
-│── frontend/
-│ ├── index.html
-│ ├── style.css
-│ ├── script.js
-│── README.md
-│── requirements.txt
 
 
 
@@ -44,12 +32,9 @@ aiAgent/
 ## ⚡ Installation  
 
 1. **Clone the repository**  
-```bash
-git clone https://github.com/your-username/Ai-Agent.git
-cd Ai-Agent
 
 
-Create virtual environment & activate
+2. **Create virtual environment & activate
 
 python -m venv venv
 # On Windows
@@ -71,9 +56,7 @@ python backend/app.py
 Open frontend
 Simply open frontend/index.html in your browser.
 
-📸 Screenshots (Add Later)
-
-You can add screenshots of generated websites here. Example:
+---
 
 📡 API Integration
 
