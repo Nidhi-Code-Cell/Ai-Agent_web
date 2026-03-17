@@ -1,11 +1,11 @@
-# 🌐 AI Agent Website Generator  
+# AI Agent Website Generator  
 
 An **AI-powered Agent** that can generate a **fully functional website** (with complete folder structure and files) in just one simple prompt.  
 This project integrates external APIs like **Weather**, **Crypto Price Tracker**, and **Day/Time APIs**, along with modern design features to create dynamic and responsive websites automatically.  
 
 ---
 
-## 🚀 Features  
+## Features  
 - 🔹 Generate a **complete website** (HTML, CSS, JS) from a single prompt  
 - 🔹 **Weather API** – fetch and display live weather updates  
 - 🔹 **Crypto API** – real-time cryptocurrency price tracking  
@@ -15,7 +15,7 @@ This project integrates external APIs like **Weather**, **Crypto Price Tracker**
 
 ---
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** Python (Flask)  
 - **Database:** PostgreSQL (optional for persistence)  
@@ -29,7 +29,7 @@ This project integrates external APIs like **Weather**, **Crypto Price Tracker**
 
 ---
 
-## ⚡ Installation  
+## Installation  
 
 1. **Clone the repository**  
 
@@ -37,10 +37,8 @@ This project integrates external APIs like **Weather**, **Crypto Price Tracker**
 2. **Create virtual environment & activate
 
 python -m venv venv
-# On Windows
+## On Windows
 venv\Scripts\activate
-# On Mac/Linux
-source venv/bin/activate
 
 
 Install dependencies
@@ -66,14 +64,5 @@ Simply open frontend/index.html in your browser.
 
 📅 Day/Time API → Provides current date & time
 
-🤝 Contributing
 
-Contributions are welcome! Feel free to fork this repository and submit pull requests.
 
-📜 License
-
-This project is licensed under the MIT License.
-
-👩‍💻 Author
-
-Nidhi Kumari ✨
